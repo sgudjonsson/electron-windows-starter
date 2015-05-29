@@ -1,8 +1,9 @@
 {
   "name": "electron-windows-starter",
+  "productName": "ElectronWindowsStarter",
   "version": "1.0.0",
   "description": "A starter project for Electron applications focused on Windows",
-  "main": "src/main.js",
+  "main": "build/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/sgudjonsson/electron-windows-starter#readme",
   "devDependencies": {
+    "atom-shell-installer": "file:..\\atom-shell-installer",
     "gulp": "^3.8.11",
-    "require-dir": "^0.3.0"
+    "gulp-asar": "git+https://github.com/danshick/gulp-asar.git",
+    "gulp-download-electron": "0.0.5",
+    "require-dir": "^0.3.0",
+    "rimraf": "^2.3.4"
   }
 }
